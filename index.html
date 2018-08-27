@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <link rel="apple-touch-icon" sizes="76x76" href="./assets/img//apple-icon.png">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+  <title>Bountium</title>
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport' />
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
+  <link href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <link href="./assets/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="./assets/css/paper-kit.css?v=2.2.1" rel="stylesheet" />
+  <link href="./assets/demo/demo.css" rel="stylesheet" />
+  <link rel="icon" type="image/jpg" href="img/logoInverse.png">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<!-- sign up modal -->
+<div class="modal fade text" id="signUpModal" tabindex="-1" role="dialog" aria-hidden="false">
+  <div class="modal-dialog modal-register">
+    <div class="modal-content" id = "modal-content">
+      <div class="modal-header no-border-header text-center">
+        <button type="button" class="close pt-0" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+        <div> &nbsp;</div>
+        <h3 class="modal-title text-center">Bountium</h3>
+        <p>Sign Up for Updates</p>
+      </div>
+      <div class="modal-body">
+        <form id="form">
+          <input type="hidden" name="type" value="mailingList">
+          <div class="card-body">
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="form-group label-floating">
+                  <label class="control-label">First Name</label>
+                  <input type="text" name="firstName" class="form-control" placeholder="First Name">
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="form-group label-floating">
+                  <label class="control-label">Last Name</label>
+                  <input type="text" name="lastName" class="form-control" placeholder="Last Name">
+                </div>
+              </div>
+            </div>
+            <div class="form-group label-floating">
+              <label class="control-label">Email Address / Phone Number</label>
+              <input type="email" name="emailOrPhone" class="form-control" placeholder="Email" />
+            </div>
+            <div class="form-group label-floating">
+              <input type="hidden" name="company" value = "" class="form-control" placeholder="Company" />
+            </div>
+            <div class="form-group label-floating">
+              <input type = "hidden" name="message" value = "" class="form-control" id="message" rows="6" placeholder="Message">
+            </div>
+            <div class="row">
+              <div class="col-md-6 mx-auto">
+                <button type="submit" class="btn btn-primary" id = "submit-form">Sign Up</button>
+              </div>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<body class="sidebar-collapse">
+  <!-- responsive navbar -->
+  <nav class="navbar navbar-expand-lg bg-white fixed-top bg-white nav-down">
+    <div class="container">
+      <div class="navbar-translate">
+        <a class="navbar-brand p-0" href="#"><img src="img/nameInverse.png" alt="Logo" height = "70"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-bar bar1" style = "background:black"></span>
+          <span class="navbar-toggler-bar bar2" style = "background:black"></span>
+          <span class="navbar-toggler-bar bar3" style = "background:black"></span>
+        </button>
+      </div>
+      <div class="collapse navbar-collapse" data-nav-image="../assets/img/blurred-image-1.jpg" data-color="orange">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Bountium <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="post.html">Beta</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="roadmap.html">Roadmap</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contribute.html">Contribute</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="inquiries.html">Inquiries</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <main style = "padding-top: 80px;">
+    <div class="page-header" style="background-image: url(img/meeting.jpg); min-height: 50vh;">
+      <div class="filter"></div>
+      <div class="content-center">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-6  mx-auto">
+              <h1>Bountium</h1>
+              <h3>The Future of Getting Things Done</h4>
+              <br />
+              <button type="button" class="btn btn-neutral" data-toggle="modal" data-target="#signUpModal">
+                Sign Up for Updates
+              </button>
+              <a href="post.html" class="btn btn-primary">
+                Try the Beta
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="features-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-10 mx-auto text-center">
+            <h2 class="title">Empowering Individuals</h2>
+            <h5 class="description">By leveraging the <a href = "https://gitlab.com/Sublimity-Blockchain/Retina">Retina Framework</a>, Bountium enables people to issue jobs on any matter that can be objectively measured. It could be delivery of a physical item, completion of a digital task, or construction of a publicly funded project - all it takes is the right Oracle, and Bountium can make it happen.</h5>
+            <br/>
+            <h5 class="description mb-3">We've provided three Oracles out of the box, just for you:</h5>
+          </div>
+        </div>
+        <div class="card-deck-wrapper">
+          <div class="card-deck mx-auto">
+            <div class="card text-center text-white" style="background: #333">
+              <div class="card-body">
+                <h6 class="">Blind Trust Oracle</h6>
+                <div class="card-icon">
+                  <i class="far fa-eye-slash"></i>
+                </div>
+                <p class="">This Oracle trusts the first result sent to it, and pays it accordingly. Its great for a simple task, or an opinion based task with no wrong answer.</p>
+              </div>
+            </div>
+            <div class="card text-center text-white" style="background: #333" >
+              <div class="card-body">
+                <h6 class="">Manual Approve Oracle</h6>
+                <div class="card-icon">
+                  <i class="fas fa-handshake"></i>
+                </div>
+                <p class="">This Oracle receives a response, and presents it to you, the job poster, for approval. It only pays out once you approve a response. This Oracle is great for when you need 100% satisfaction and control of the end result.</p>
+              </div>
+            </div>
+            <div class="card text-center text-white" style="background: #333">
+              <div class="card-body">
+                <h6 class="">Crowd Verification Oracle</h6>
+                <div class="card-icon">
+                  <i class="nc-icon nc-world-2"></i>
+                </div>
+                <p class=""> This Oracle provides decentralised approval of your task's completion. A worker submits their response, and a crowd of users is incentivised to assess the quality of the worker's response. This is a great balance between the first two oracles - you get high-quality, and yet hands-free, completion.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-8 mx-auto text-center">
+            <h5 class="description"><br>In addition to these options, we are standing by ready to design an Oracle for your exact needs - <a href = "./inquiries.html">Please contact us to find out how!</a>
+      <br><br>
+      We built this solution as an Ethereum decentralised application, which means you can use it anywhere Ethereum is accessible - anonymously!</h5>
+          </div>
+        </div>
+        <div class="info info-section">
+        	<div class="icon icon-primary">
+        		<i class="fas fa-users"></i>
+        	</div>
+        	<div class="description">
+        		<h2 class="title mt-0"> About Us </h2>
+        		<h5>Bountium is a project being developed by Sublimity, a blockchain development firm which passionately fights for empowerment of the individual. We believe that giving uncensorable access to work to the entire world will bring opportunity to those who need it most, will drive the world towards meritocracy, and will vastly increase efficiency as work becomes objective, and therefore, goal-driven.
+            <br>
+            <br>
+            We prioritise openness and transparency, so never hesitate to contact us directly at steve@bountium.org to ask for more information!
+            <br>
+            <br>
+            Follow our progress and ask us questions on Twitter at <a href="https://www.twitter.com/bountium">Bountium <i class="fab fa-twitter"></i></a>!
+            </h5>
+        	</div>
+        </div>
+        <div class="info info-section">
+        	<div class="icon icon-primary">
+        		<i class="far fa-question-circle"></i>
+        	</div>
+        	<div class="description">
+        		<h2 class="title mt-0"> Why Bountium? </h2>
+        		<h5>By issuing your task on Bountium, workers around the world will be able to see and accomplish your task, giving you instant access to a global labour force - but with the right Oracle for your needs, you'll be sure that you will only pay for satisfactory work.
+            <br>
+            <br>
+            We're building a community of developers to build an Oracle that can work for your business - take a gander at the <a href = "https://gitlab.com/Sublimity-Blockchain/Retina">Retina homepage</a> to find one that works for you, or to get started developing one yourself!
+            </h5>
+        	</div>
+        </div>
+        <div class="info info-section">
+        	<div class="icon icon-primary">
+        		<i class="fas fa-arrow-right"></i>
+        	</div>
+        	<div class="description">
+        		<h2 class="title mt-0"> So what's next? </h2>
+        		<h5>By issuing your task on Bountium, workers around the world will be able to see and accomplish your task, giving you instant access to a global labour force - but with the right Oracle for your needs, you'll be sure that you will only pay for satisfactory work.
+            <br>
+            <br>
+            We are so excited for the coming months as we approach launch! You can check out our progress and our plan on our <a href = "roadmap.html">roadmap</a>. We're always looking for help, so if you'd like to contribute, or even seek a career with us, <a href = "./contribute.html">we'd love to hear from you!</a>
+            <br>
+            <br>
+            If you'd like to get up and running with Bountium, or engage in a business relationship, please <a href = "inquiries.html">contact us</a> and we'll be in touch as soon as we can.
+            </h5>
+        	</div>
+        </div>
+      </div>
+    </div>
+  </main>
+  <hr>
+  <footer class="footer footer-primary">
+    <div class="container mx-auto">
+        <p class="m-1 text-center text-muted">&copy; 2018 Sublimity, LLC. All rights reserved.
+        <br>
+        No information here should be taken as investment advice, or considered as advising on any security or investment matter.
+        <br>
+        48 Sutton Road, Needham, MA - 781-898-8962
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./assets/js/core/jquery.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/popper.min.js" type="text/javascript"></script>
+  <script src="./assets/js/core/bootstrap.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/bootstrap-switch.js"></script>
+  <script src="./assets/js/plugins/nouislider.min.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/moment.min.js"></script>
+  <script src="./assets/js/plugins/bootstrap-tagsinput.js"></script>
+  <script src="./assets/js/plugins/bootstrap-selectpicker.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/bootstrap-datetimepicker.js" type="text/javascript"></script>
+  <script src="./assets/demo//vertical-nav.js" type="text/javascript"></script>
+  <script src="./assets/js/plugins/photo_swipe/photoswipe.min.js"></script>
+  <script src="./assets/js/plugins/photo_swipe/photoswipe-ui-default.min.js"></script>
+  <script src="./assets/js/plugins/photo_swipe/init-gallery.js"></script>
+  <script src="./assets/js/plugins/jasny-bootstrap.min.js"></script>
+  <script src="./assets/js/paper-kit.js?v=2.2.1" type="text/javascript"></script>
+  <script src="./assets/js/plugins/presentation-page/main.js"></script>
+  <script src="js/script.js"></script>
+</html>

@@ -1,0 +1,48 @@
+.page-header .filter::after {
+  background-color: rgba(0, 0, 0, 0.75)
+}
+
+[class*="features-"], [class*="team-"], [class*="projects-"], [class*="pricing-"], [class*="testimonials-"], [class*="contactus-"]{
+  padding: 20px 0;
+}
+
+h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6, .h6, p, .navbar, .brand, a, .td-name, td, button, input, select, textarea {
+  font-weight: 500;
+}
+
+.vertical-center {
+  min-height: 100%;  /* Fallback for browsers do NOT support vh unit */
+  min-height: 100vh; /* These two lines are counted as one :-)       */
+
+  display: flex;
+  align-items: center;
+}
+
+.info-section {
+  width: 100%;
+  max-width: none;
+}
+
+@media(max-width: 768px){
+  .card-deck-wrapper {margin-right:0;margin-left:0;}
+
+  .card-deck {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: .75rem;
+	    table-layout: fixed;
+	    border-spacing: 1.25rem 0;
+	}
+
+  .card-deck .card {
+	    display: block;
+	    margin-bottom: .75rem;
+	}
+
+}
+
+@media(min-width: 992px){
+  .info-section {
+    width: 83.33%;
+  }
+}
